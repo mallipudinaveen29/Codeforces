@@ -1,0 +1,31 @@
+for i in range(int(input())):
+    n=int(input())
+    m=str(n)
+    l=[]
+    j=0
+    for k in range(len(m)-1,-1,-1):
+         b=(int(m[k])*(10**j))
+         if b>0:
+            l.append(b)
+         j+=1        
+    print(len(l))
+    print(*l)
+'''input
+    5009
+    7
+    987  5
+    6
+    10000
+    10
+    output
+    2
+    9 5000
+    1
+    7
+    4
+    6 70 800 9000
+    1
+    10000
+    1
+    10'''
+
